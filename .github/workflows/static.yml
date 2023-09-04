@@ -5,6 +5,8 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
+    paths:
+      - 'index.html' # Esto se asegura de que el workflow se ejecute solo cuando se realicen cambios en index.html
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -36,7 +38,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          # Upload entire repository
+          # Upload entire repository, if you want to only upload index.html change path to 'index.html'
           path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
