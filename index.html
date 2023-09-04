@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe de Avances</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Informe de Avances</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><button onclick="showTab('avance1')">Avance 1</button></li>
+            <li><button onclick="showTab('avance2')">Avance 2</button></li>
+            <li><button onclick="showTab('avance3')">Avance 3</button></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="avance1" class="tab-content">
+            <!-- Aquí va el contenido del Avance 1 -->
+        </section>
+        <section id="avance2" class="tab-content hidden">
+            <!-- Aquí va el contenido del Avance 2 -->
+        </section>
+        <section id="avance3" class="tab-content hidden">
+            <!-- Aquí va el contenido del Avance 3 -->
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
