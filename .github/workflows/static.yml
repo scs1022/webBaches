@@ -4,7 +4,7 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["Miguel"]
+    branches: ["main"]
     paths:
       - 'index.html' # Esto se asegura de que el workflow se ejecute solo cuando se realicen cambios en index.html
 
